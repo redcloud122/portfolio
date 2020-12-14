@@ -2,10 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Awesome Project Website - Home</title>
+    <title>Awesome Website - Home</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
   </head>
   <body>
-    <header>
+    <header class="site-header">
       <h1>Awesome Project Website</h1>
     </header>
 
@@ -15,90 +16,75 @@
     </nav>
 
     <main>
-      <article>
+      <article class="page-article">
         <header>
-          <h2>Projects</h2>
+          <h2>General Project Information</h2>
         </header>
-        <p>Front-End projects are designed to achieve Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+        <p>4 Front-End projects are designed to achieve Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
         <footer>
           <blockquote cite="https://startlearning.uw.edu/courses/course-v1:UW+HTML5100+2019_Spring/courseware/77ebe0bb9ef1426192d6f6701797e066/f951a7b99e5f42e280fe2e017fcf5f59/">
             <p>or that you might do - it's ok to dream right now!</p>
-            <cite>Instructor - Lesson 2 Assignment</cite>
+            <cite>Instructor - Mr. Thomas</cite>
           </blockquote>
         </footer>
       </article>
 
-      <section>
-        <h4>Past Project</h4>
-        <figure>
-          <img src="images/img_projPast.png" width="119" height="138" alt="Image: Past Project Image - What is Semantic Elements">
-          <figcaption>This project is an introduction to semantic elements.</figcaption>
-        </figure>
-        <p>Project link: <a href="https://github.com/redcloud122/semantic-elements">What is semantic elements</a></p>
-      </section>
+      <hr>
 
       <section>
-        <h4>Current Project</h4>
+        <h3>Current Project</h3>
         <figure>
           <img src="images/img_projCurrent.png" width="154" height="112" alt="Image: Current Project Image - Better Understanding of Semantic Elements">
-          <figcaption>This project is about better understanding on semantic elements.</figcaption>
+          <figcaption>This project is about becoming an expert on HTML Front-End Technologies.</figcaption>
         </figure>
-        <p>Project link: <a href="https://github.com/redcloud122/portfolio">Understanding semantic elements</a></p>
+        <a class="project-link" href="#">Learn More</a>
       </section>
 
-      <section>
-        <article>
-          <header>
-            <h4>Two Upcoming Deep-Dive Projects</h4>
-          </header>
+      <hr>
 
-          <section>
-            <h4>Deep-Dive Project One</h4>
+      <section>
+        <h3>2 Upcoming Deep-Dive Projects</h3>
+
+        <div class="row">
+          <div class="column" style="background-color: lightcyan;">
+            <h4>Deep-Dive 1</h4>
             <figure>
-              <img src="images/img_projFuture1.png" width="185" height="99" alt="Image: Deep-Dive Project One Image - Becoming Knowledgeable of Semantic Elements">
+              <img src="images/img_projFuture1.png" height="99" alt="Image: Deep-Dive Project One Image - Becoming Knowledgeable of Semantic Elements">
               <figcaption>This project is about becoming knowledgeable of semantic elements.</figcaption>
             </figure>
-            <p>Future project 1 link: <a href="#">Becoming knowledgeable of semantic elements</a></p>
-          </section>
+            <a class="project-link" href="#">Learn More</a>
+          </div>
 
-          <section>
-            <h4>Deep-Dive Project Two</h4>
+          <div class="column" style="background-color: azure;">
+            <h4>Deep-Dive 2</h4>
             <figure>
-              <img src="images/img_projFuture2.png" width="147" height="125" alt="Image: Deep-Dive Project Two Image - Becoming an expert on HTML Front-End">
-              <figcaption>This project is about becoming an expert on HTML Front-End.</figcaption>
+              <img src="images/img_projFuture2.png" height="99" alt="Image: Deep-Dive Project Two Image - Becoming an expert on HTML Front-End">
+              <figcaption>This project is about becoming an expert on HTML Front-End Technologies.</figcaption>
             </figure>
-            <p>Future project 2 link: <a href="#">Becoming an expert on HTML Front-End Technologies</a></p>
-          </section>
+            <a class="project-link" href="#">Learn More</a>
+          </div>
+        </div>
+      </section>
 
-          <footer>
-            <h5>The above 2 deep-dive projects are awesome - Hold your breath!</h5>
-          </footer>
-        </article>
+      <hr>
+
+      <section>
+        <h3>Past project</h3>
+        <aside>
+          <h4>Project Testimonial</h4>
+          <p>Complete</p>
+          <p><q>...Excellent summary of semantic elements and your code looks great...</q></p>
+        </aside>
+        <figure>
+          <img src="images/img_projPast.png" width="119" alt="Image: Past Project Image - What is Semantic Elements">
+          <figcaption>This project is about becoming an expert on HTML Front-End Technologies.</figcaption>
+        </figure>
+        <a class="project-link" href="#">Learn More</a>
       </section>
     </main>
 
-    <aside>
-      <h3>Get To Know the Projects Better</h3>
-
-      <section>
-        <h4>First Project - Testimonial</h4>
-        <p>Complete</p>
-        <p><q>excellent summary of semantic elements and your code looks great</q></p>
-      </section>
-
-      <section>
-        <h4>Current Project - Testimonial</h4>
-        <p>Pending result</p>
-      </section>
-
-      <section>
-        <h4>Two Deep-Dive Projects - Testimonial</h4>
-        <p>Not start</p>
-      </section>
-    </aside>
-
-    <footer>
-      <h5>Contact website owner</h5>
+    <footer class="site-footer">
+      <h5>Question? Contact website owner</h5>
     </footer>
   </body>
 </html>
