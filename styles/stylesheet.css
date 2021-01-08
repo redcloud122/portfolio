@@ -1,18 +1,50 @@
-body {
-  background-color: honeydew;
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
+
+* {
+  box-sizing: border-box;
+  font-family: Alegreya, Georgia, serif;
   color: #333333;
+}
+header, nav, footer {
+  padding-left: 2rem;
+}
+
+.fa-award {
+  color: red;
+  margin-left: 1rem;
+}
+
+h1 {
+  color: #18414e;
+}
+
+h2, h3, h4, h5 {
+  font-weight: 500;
+}
+
+h3, h4 {
+  padding: 0;
+  margin: 0;
+  color: #29627e;
+}
+
+.clearfix {
+  content:"";
+  display: block;
+  clear:both;
 }
 
 .site-header{
-  background-color: lightblue;
+  background: lightblue;
   padding-top: .5em;
   padding-bottom: .5em;
 }
 
 .site-footer {
-  background-color: #d1e0e0;
+  background: #d1e0e0;
   margin-top: .5em;
-  padding: .2em 0 .2em;
+  padding-top: .2em;
+  padding-bottom: .2em;
 }
 
 nav {
@@ -33,43 +65,64 @@ nav a:hover{
   font-size: 1.1em;
 }
 
-.column {
-  float: left;
-  width: 50%;
+.box-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.box {
+  position: relative;
+  left: 2rem;
+  width: 95%;
+  border-bottom: 1rem solid white;
+  background: #e6f2ff;
+  padding: 1rem;
+}
+
+.box-row {
+  position: relative;
+  left: 1rem;
+  padding-top: 1rem;
+}
+
+.column {
+  width: 30%;
+  float: left;
 }
 
 aside {
   width: 65%;
   padding: 1em 1em 1em;
   float: right;
-  box-shadow: inset 5px 0 5px -5px #29627e;
-  font-style: italic;
+  box-shadow: inset 3px 0 3px -3px #29627e;
   color: #29627e;
+}
+
+figure {
+  margin-left: 0;
+  position: relative;
+  left: 1%;
+}
+
+.column > figure {
+  margin-bottom: 0;
 }
 
 figcaption {
   font-size: small;
   color: navy;
-  font-style: italic;
 }
 
-hr {
-  color: lightsteelblue;
-}
-
-a.project-link:link, a.project-link:visited {
+a.project-link:link {
   background-color: #00bfff;
   color:white;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  position: relative;
+  left: 1%;
 }
 
 a.project-link:hover, a.project-link:active {
