@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Awesome Website - Contact</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Awesome Project Website</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a class="active" href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <article class="page-article">
+      <h2>Contact Me</h2>
+      <form method="GET">
+        <fieldset>
+
+          <div class="container">
+            <div class="item1">
+              <label>Your name:<br>
+                <input type="text" name="contactName">
+              </label>
+            </div>
+
+            <div class="item2">
+              <label>Your email:<br>
+                <input type="email" name="contactEmail">
+              </label>
+            </div>
+
+            <div class="item3">
+              <fieldset>
+                <legend>What type of project are you interested in?</legend>
+                <label class="answer">
+                  <input type="checkbox" name="contactProject" value="selfEmploy">Self Emplyed
+                </label>
+                <label class="answer">
+                  <input type="checkbox" name="contactProject" value="student">Student
+                </label>
+                <label class="answer">
+                  <input type="checkbox" name="contactProject" value="itProf">IT Professional
+                </label>
+                <label class="answer">
+                  <input type="checkbox" name="contactProject" value="other">Other
+                </label>
+            </fieldset>
+            </div>
+
+            <div class="item4">
+              <label>Your phone#:<br>
+                <input type="tel" name="contactPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <br>
+                <small>Format: 123-456-7890</small>
+              </label>
+            </div>
+
+            <div class="item5">
+              <label>What city are you in?<br>
+                <input type="text" name="contactCity">
+              </label>
+            </div>
+
+            <div class="item6">
+              <fieldset>
+                <legend>Are you interested in donating your time?</legend>
+                <label class="answer">
+                  <input type="radio" name="contactDonate" value="yes">
+                  Yes
+                </label>
+                <label class="answer">
+                  <input type="radio" name="contactDonate" value="no">
+                  No
+                </label>
+            </fieldset>
+            </div>
+
+            <div class="item7">
+              <label>What information are you looking for?<br>
+                <textarea name="contactInfo" rows="4" cols="50">I would like to know more about...</textarea>
+              </label>
+            </div>
+
+            <div class="item8">
+              <label>What's the best time to reach you?<br>
+                <select name="contactTime">
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option selected="selected" value="evening">Evening</option>
+                </select>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+      </form>
+    </article>
+
+    <footer>
+      <h5>Question? Contact the website owner 425-123-1234 h5</h5>
+    </footer>
+  </body>
+</html>

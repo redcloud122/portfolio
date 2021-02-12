@@ -6,6 +6,57 @@
   color: #333333;
 }
 
+label, fieldset legend {
+  color: steelblue;
+}
+
+.answer {
+  color: #333;
+}
+
+.item1 { grid-area: name;}
+.item2 { grid-area: email;}
+.item3 { grid-area: project;}
+.item4 { grid-area: phone;}
+.item5 { grid-area: city;}
+.item6 { grid-area: donate;}
+.item7 { grid-area: info;}
+.item8 { grid-area: time;}
+
+.item3 label {
+  display: block;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    'name email project'
+    'phone city project'
+    'info info donate'
+    'info info time';
+  grid-gap: 1em;
+}
+
+textarea {
+  width: 90%;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  border-color: #ccc;
+  font-style: italic;
+}
+
+input[type=submit] {
+  background-color: steelblue;
+  font-size: large;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+input[type=checkbox] {
+  margin-right: 1rem;
+}
+
 h2, h3, h4 { font-weight: 500; }
 
 h3, h4 {
