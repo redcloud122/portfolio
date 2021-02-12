@@ -41,7 +41,7 @@ textarea {
   width: 90%;
   border-radius: 1px;
   background-color: #f8f8f8;
-  border-color: #ccc;
+  border: 1px solid #ccc;
   font-style: italic;
 }
 
