@@ -39,7 +39,7 @@ label, fieldset legend {
 
 textarea {
   width: 90%;
-  border-radius: 4px;
+  border-radius: 1px;
   background-color: #f8f8f8;
   border-color: #ccc;
   font-style: italic;
